@@ -1,4 +1,4 @@
 #!/bin/bash
 
 apt update
-apt install iperf3
+apt install -y iperf3

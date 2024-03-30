@@ -13,8 +13,8 @@ sudo apt update
 sudo apt upgrade
 
 #From bash command line (assumes Git is installed)
-git clone https://github.com/mellanox/sockperf
-cd sockperf/
+git clone https://github.com/mellanox/sockperf sockperf-git
+cd sockperf-git/
 ./autogen.sh
 ./configure --prefix=
 
