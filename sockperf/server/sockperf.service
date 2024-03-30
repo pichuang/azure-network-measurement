@@ -1,0 +1,14 @@
+[Unit]
+Description=Sockperf Server Mode
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=nobody
+ExecStart=/usr/bin/sockperf sr --tcp --daemonize --port 11111
+
+[Install]
+WantedBy=multi-user.target
