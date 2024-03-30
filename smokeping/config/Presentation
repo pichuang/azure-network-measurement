@@ -1,0 +1,60 @@
+*** Presentation ***
+
+template = /etc/smokeping/basepage.html
+charset  = utf-8
+
++ charts
+
+menu = Charts
+title = The most interesting destinations
+
+++ stddev
+sorter = StdDev(entries=>4)
+title = 標準差
+menu = 標準差
+format = 標準差 %f
+
+++ max
+sorter = Max(entries=>5)
+title = 最大延遲
+menu = 最大延遲
+format = 最大延遲時間 %f 秒
+
+++ loss
+sorter = Loss(entries=>5)
+title = 丟包率
+menu = 丟包率
+format = 丟包 %f
+
+++ median
+sorter = Median(entries=>5)
+title = Top Median Roundtrip Time
+menu = by Median
+format = Median RTT %f seconds
+
++ overview
+
+width = 1000
+height = 200
+range = 1h
+
++ detail
+
+width = 1000
+height = 200
+unison_tolerance = 2
+
+"Last 10 Mins"    10m
+"Last 30 Mins"    30m
+"Last 1 Hours"    1h
+"Last 3 Hours"    3h
+"Last 1 Day"   1d
+"Last 3 Days"    3d
+"Last 7 Days"    7d
+
+#+ hierarchies
+#++ owner
+#title = Host Owner
+#++ location
+#title = Location
+

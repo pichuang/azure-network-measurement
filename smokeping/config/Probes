@@ -1,0 +1,23 @@
+*** Probes ***
+
++ FPing
+binary = /usr/sbin/fping
+pings = 20
+step = 60
+
++ FPing6
+binary = /usr/sbin/fping
+protocol = 6
+
++ DNS
+binary = /usr/bin/dig
+lookup = google.com
+pings = 20
+step = 60
+
++ TCPPing
+binary = /usr/bin/tcpping
+forks = 10
+offset = random
+pings = 20
+port = 22

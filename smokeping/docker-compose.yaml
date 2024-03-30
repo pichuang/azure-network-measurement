@@ -1,0 +1,16 @@
+---
+services:
+  smokeping:
+    image: lscr.io/linuxserver/smokeping:latest
+    container_name: smokeping
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Taipei
+      - CACHE_DIR=$PWD/tmp #optional
+    volumes:
+      - $PWD/config:/config
+      - $PWD/data:/data
+    ports:
+      - 80:80
+    restart: unless-stopped

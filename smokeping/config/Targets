@@ -1,0 +1,57 @@
+*** Targets ***
+
+probe = FPing
+
+menu = Top
+title = TaiwanNorth Network Latency Grapher
+remark = Welcome to the SmokePing website of TaiwanNorth. \
+         All VM is
+
++ Overview
+
+menu = Overview
+title = Overview
+
+++ CompareTCPandTCMP
+
+menu = Compare TCP and ICMP
+title = Compare TCP and ICMP
+host = /TaiwanNorthSites/ICMPSameVMSite /TaiwanNorthSites/TCPSameVMSite
+
+
++ TaiwanNorthSites
+
+menu = TaiwanNorth Sites
+title = TaiwanNorth Sites
+
+++ ICMPSameVMSite
+menu = to VM in same VNet using ICMP
+title = to VM in same VNet using ICMP
+host = 10.100.2.37
+
+++ TCPSameVMSite
+probe = TCPPing
+menu = to VM in same VNet using TCPping
+title = to VM in same VNet using TCPping
+host = 10.100.2.37
+port = 22
+
+++ ICMPERPrimarySite
+menu = to ERPrimarySite
+title = to ERPrimarySite
+host = 10.1.1.1
+
+++ ICMPERSecondarySite
+menu = to ERSecondarySite
+title = to ERSecondarySite
+host = 10.1.2.1
+
++ InternetSites
+
+menu = Internet Sites
+title = Internet Sites
+
+
+
+
+
