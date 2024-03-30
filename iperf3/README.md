@@ -1,5 +1,10 @@
 # iperf3
 
+## Installation
+
+```bash
+apt -y install iperf3
+```
 
 ## Results
 
