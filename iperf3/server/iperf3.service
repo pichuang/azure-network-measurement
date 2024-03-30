@@ -3,7 +3,7 @@ Description=iperf3 server
 After=syslog.target network.target auditd.service
 
 [Service]
-ExecStart=/usr/bin/iperf3 -s
+ExecStart=/usr/bin/iperf3 -s --port 5201
 
 [Install]
 WantedBy=multi-user.target
