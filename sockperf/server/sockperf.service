@@ -7,7 +7,7 @@ StartLimitIntervalSec=0
 Type=simple
 Restart=always
 RestartSec=1
-User=nobody
+User=root
 ExecStart=/usr/bin/sockperf sr --tcp --daemonize --port 11111
 
 [Install]
