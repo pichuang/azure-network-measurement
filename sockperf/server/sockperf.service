@@ -8,7 +8,7 @@ Type=simple
 Restart=always
 RestartSec=1
 User=root
-ExecStart=/usr/bin/sockperf sr --tcp --daemonize --port 11111
+ExecStart=/usr/bin/sockperf sr --tcp --port 11111
 
 [Install]
 WantedBy=multi-user.target
