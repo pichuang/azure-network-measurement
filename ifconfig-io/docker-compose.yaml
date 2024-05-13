@@ -1,0 +1,9 @@
+version: "3.4"
+
+services:
+  ifconfig:
+    image: georgyo/ifconfig.io
+    ports:
+      - 80:8080
+    env_file:
+      - ./.env
