@@ -7,6 +7,8 @@ iperf3 --client 70.157.24.53  --time 30 --interval 1 --omit 1 --bidir --parallel
 # or
 # iperf3 --client 70.157.24.53  --time 30 --interval 1 --omit 1 --parallel 32
 # iperf3 --client 70.157.24.53  --time 30 --interval 1 --reverse --omit 1 --parallel 32
+# or testing jitter
+# iperf3 --client 70.157.24.53  --time 30 --interval 1 --omit 1 --bidir --parallel 32 --udp
 
 echo "=============="
 echo "Private Routing"
