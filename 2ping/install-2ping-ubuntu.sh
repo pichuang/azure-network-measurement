@@ -1,3 +1,3 @@
 #!/bin/bash
 apt update
-apt install 2ping
+apt install -y 2ping
