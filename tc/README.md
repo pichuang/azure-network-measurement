@@ -12,7 +12,17 @@ tc qdisc del dev eth0 root
 tc qdisc show dev eth0
 ```
 
-## Latency
+## Common Command
+
+```bash
+LATENCY="100ms"
+tc qdisc add dev eth0 root netem delay $LATENCY 5ms 10%
+```
+
+
+
+
+## 1. Latency
 
 ### Use Case 1: Delay 100ms
 
@@ -75,7 +85,7 @@ tc qdisc add dev eth0 root delay 100ms 10ms
 tc qdisc add dev eth0 root delay 100ms 10ms 10%
 ```
 
-## Loss Rate
+## 2. Loss Rate
 
 ### Use Case 1: Loss 0.1%
 
@@ -89,7 +99,7 @@ tc qdisc add dev eth0 root netem loss 0.1%
 tc qdisc add dev eth0 root netem loss 0.1% 10%
 ```
 
-## Duplicate
+## 3. Duplicate
 
 ### Use Case 1: Duplicate 1%
 
