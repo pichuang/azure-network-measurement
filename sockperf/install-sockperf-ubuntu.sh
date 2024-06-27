@@ -9,8 +9,8 @@ sudo apt-get install -y autotools-dev
 sudo apt-get install -y automake
 sudo apt-get install -y autoconf
 sudo apt-get install -y libtool
-sudo apt update
-sudo apt upgrade
+sudo apt update -y 
+sudo apt upgrade -y
 
 #From bash command line (assumes Git is installed)
 git clone https://github.com/mellanox/sockperf sockperf-git
