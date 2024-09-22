@@ -19,9 +19,6 @@ LATENCY="100ms"
 tc qdisc add dev eth0 root netem delay $LATENCY 5ms 10%
 ```
 
-
-
-
 ## 1. Latency
 
 ### Use Case 1: Delay 100ms

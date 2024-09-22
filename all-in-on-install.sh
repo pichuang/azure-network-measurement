@@ -1,5 +1,6 @@
 #!/bin/bash
 
+./deadman/install-deadman.sh
 ./2ping/install-2ping-ubuntu.sh
 ./2ping/server/install-systemd-service.sh
 ./asn/install-asn-ubuntu.sh
