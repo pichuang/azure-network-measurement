@@ -7,8 +7,8 @@
 | D            | Yes       | Dropped packets      | The number of packets dropped.           | 丟棄的封包數量                       |
 | R            | Yes       | Received packets     | The number of packets received.          | 接收的封包數量                       |
 | N            |           | Newest RTT (ms)      | The most recent round-trip time in ms.   | 最新的往返時間（毫秒）               |
-| B            |           | Min/Best RTT (ms)    | The minimum/best round-trip time in ms.  | 最小/最佳往返時間（毫秒）            |
-| A            | Yes       | Average RTT (ms)     | The average round-trip time in ms.       | 平均往返時間（毫秒）                 |
+| B            | Yes       | Min/Best RTT (ms)    | The minimum/best round-trip time in ms.  | 最小/最佳往返時間（毫秒）            |
+| A            |           | Average RTT (ms)     | The average round-trip time in ms.       | 平均往返時間（毫秒）                 |
 | W            | Yes       | Max/Worst RTT (ms)   | The maximum/worst round-trip time in ms. | 最大/最差往返時間（毫秒）            |
 | V            | Yes       | Standard Deviation   | The standard deviation of the data.      | 標準差                               |
 | G            |           | Geometric Mean       | The geometric mean of the data.          | 幾何平均數                           |
@@ -19,5 +19,5 @@
 
 ## Command
 ```bash 
-sudo mtr -zb -o "LSDR AWV JM"
+sudo mtr -zb -o "LSDR BWV JM"
 ```
