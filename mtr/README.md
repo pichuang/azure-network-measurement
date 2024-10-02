@@ -16,3 +16,8 @@
 | M            | Yes       | Jitter Mean/Avg.     | The mean/average jitter.                 | 平均抖動                             |
 | X            |           | Worst Jitter         | The worst jitter recorded.               | 最差抖動                             |
 | I            |           | Interarrival Jitter  | The jitter between packet arrivals.      | 封包到達間隔抖動                     |
+
+## Command
+```bash 
+sudo mtr -zb -o "LSDR AWV JM"
+```
