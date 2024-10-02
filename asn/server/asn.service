@@ -8,7 +8,7 @@ Type=simple
 Restart=always
 RestartSec=1
 User=nobody
-ExecStart=/usr/local/bin/asn -l 0.0.0.0
+ExecStart=/usr/bin/asn -l 0.0.0.0 49200
 
 [Install]
 WantedBy=multi-user.target
